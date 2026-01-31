@@ -1,0 +1,62 @@
+<div class="container">
+    <text class="detail-title">Trip Details</text>
+
+    <list class="detail-list">
+        <list-item class="detail-item">
+            <div class="addresssection">
+                <text class="label">ADDRESS</text>
+                <text class="addresstext">
+                    {{ selectedTripData[selectedTrip].address }}
+                </text>
+            </div>
+        </list-item>
+
+        <list-item class="detail-item">
+            <text class="meta-text">
+                {{ selectedTripData[selectedTrip].day }} • {{ selectedTripData[selectedTrip].time }}
+            </text>
+        </list-item>
+
+        <list-item class="detail-item">
+            <div class="row">
+                <text class="row-label">Driver:</text>
+                <text  class="row-value">
+                    {{ selectedTripData[selectedTrip].driver }}
+                </text>
+            </div>
+        </list-item>
+
+        <list-item class="detail-item">
+            <div class="row">
+                <text class="row-label">Plate:</text>
+                <text class="row-value blue">
+                    {{ selectedTripData[selectedTrip].plaka }}
+                </text>
+            </div>
+        </list-item>
+
+        <list-item class="detail-item">
+            <div class="row">
+                <text class="row-label">Contact:</text>
+                <text class="row-value orange">
+                    {{ selectedTripData[selectedTrip].telNo }}
+                </text>
+            </div>
+        </list-item>
+
+        <list-item class="detail-item">
+            <div class="amount-box">
+                <text class="amount-label">Total Amount</text>
+                <text class="amount-value">
+                    {{ selectedTripData[selectedTrip].totalAmount }}
+                </text>
+            </div>
+        </list-item>
+
+        <list-item class="detail-item center" on:click="onCallAgain">
+            <div class="call-again-btn">
+                <image class="img" src="/common/media/repeat.png"></image>
+            </div>
+        </list-item>
+    </list>
+</div>

@@ -1,0 +1,69 @@
+<stack class="container" onswipe="swipeEvent">
+    <swiper class="page-container"
+            index="{{ index }}"
+            onchange="change"
+            indicator="false">
+        <div class="swiper-item">
+            <div class="page-content">
+                <text class="page-title">Current Trip</text>
+
+                <div if="{{ selectedTrip === '' }}" class='trip-card'>
+                    <text>No trip found</text>
+                    <div class="action-button" onclick="startNewTrip">
+                        <text class="action-button-text">Start New Trip</text>
+                    </div>
+                </div>
+
+                <div else class='trip-card'>
+                    <div class="address-vertical-row">
+                        <text class="address-label">Pickup Address</text>
+                        <text class="address-value">{{ selectedTripData[selectedTrip].address }}</text>
+                    </div>
+                    <div class="row">
+                        <text class="row-label">Plate:</text>
+                        <text class="row-value blue">{{ selectedTripData[selectedTrip].plaka }}</text>
+                    </div>
+                    <div class="row">
+                        <text class="row-label">Contact:</text>
+                        <text class="row-value orange">{{ selectedTripData[selectedTrip].telNo }}</text>
+                    </div>
+                    <div class="row">
+                        <text class="row-label">Distance Remaining:</text>
+                        <text class="row-value">{{ remainingDistance }} km</text>
+                    </div>
+                    <div class="row">
+                        <text class="row-label">Time Remaining:</text>
+                        <text class="row-value">{{ remainingTime }} sec</text>
+                    </div>
+                    <div class="cancel-button" onclick="cancelTrip">
+                        <text class="cancel-button-text">Cancel Trip</text>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper-item">
+            <div class="page-content">
+
+                <text class="page-title"> Old Trips </text>
+                <list class="list" indexer="true">
+                    <list-item on:click="routeDetails($item.travelId)" class="item" for="{{ mockTaxiCalls }}">
+                        <div class="item-container">
+                            <text class="address">{{ $item.address }}</text>
+                            <text class="meta">{{ $item.day }} • {{ $item.time }}</text>
+                            <text class="driver"> Driver: {{ $item.driver }}</text>
+                        </div>
+                    </list-item>
+                </list>
+            </div>
+        </div>
+    </swiper>
+
+    <div class="indicator-container">
+        <div class="indicator-dot" for="{{ infos }}"
+             style="background-color: {{ dotIndex === $idx ? '#FFCB74' : '#4A4A4A' }};
+                     width: {{ dotIndex === $idx ? '24px' : '8px' }};
+                     height: {{ dotIndex === $idx ? '8px' : '8px' }};"></div>
+    </div>
+</stack>

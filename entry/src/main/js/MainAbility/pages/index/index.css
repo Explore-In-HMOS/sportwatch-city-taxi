@@ -1,0 +1,286 @@
+.container {
+  width: 100%;
+  height: 454px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.page-container {
+  width: 454px;
+  height: 454px;
+  align-items: center;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  placeholder-color: black;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.item {
+  height: 120px;
+  margin-bottom: 5px;
+  border-top: 1px solid #dcdcdc;
+
+}
+
+.address {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.meta {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.driver {
+  font-size: 18px;
+  color: #22c55e;
+}
+
+.item-container {
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.logo {
+  width: 152px;
+  height: 60px;
+}
+
+.min-progress {
+  width: 300px;
+  height: 300px;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFCB74;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+.info-card {
+  width: 100%;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-label {
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.info-placeholder {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 12px;
+}
+
+.location-button {
+  width: 180px;
+  height: 40px;
+  background-color: #2D2D2D;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  font-size: 16px;
+  color: #FFCB74;
+  font-weight: 500;
+}
+
+.message-card {
+  width: 100%;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  flex-direction: column;
+}
+
+.message-label {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 6px;
+}
+
+.message-text {
+  font-size: 16px;
+  color: #4CAF50;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.action-button {
+  width: 60%;
+  height: 42px;
+  background-color: #FFCB74;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.action-button-text {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.cancel-button {
+  width: 65%;
+  height: 50px;
+  background-color: #FFCB74;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.cancel-button-text {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.indicator-container {
+  width: 100%;
+  height: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.indicator-dot {
+  height: 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
+  transition: all 0.3s ease;
+}
+
+.trip-card {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+}
+
+.address-vertical-row {
+  width: 90%;
+  height: 80px;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.address-label {
+  font-size: 24px;
+  color: yellowgreen;
+}
+
+.address-value {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.address-vertical-row .row-label {
+  font-size: 16px;
+  color: #888888;
+}
+
+.row {
+  width: 85%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+}
+
+.row-label {
+  font-size: 24px;
+  color: #999999;
+}
+
+.row-value {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.blue {
+  color: #00bfff;
+}
+
+.orange {
+  color: #ffa500;
+}
+
+.amount-box {
+  margin-top: 10px;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amount-label {
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+.amount-value {
+  font-size: 30px;
+  color: #00ff00;
+  font-weight: bold;
+}
